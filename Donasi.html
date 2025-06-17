@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donasi - Social Camp</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5fbf7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #1d7a4e;
+    }
+
+    .donation-container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .donation-container h2 {
+      text-align: center;
+      color: #2b542c;
+      margin-bottom: 10px;
+    }
+
+    .donation-container p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #444;
+      margin-bottom: 30px;
+    }
+
+    .bank-info {
+      background-color: #e5f6ea;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .bank-info h3 {
+      color: #2b542c;
+      margin-bottom: 10px;
+    }
+
+    .info-line {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .info-line span {
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    .copy-button {
+      background-color: #2b542c;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .copy-button:hover {
+      background-color: #1e4023;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2b542c;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong style="color:green">Social Camp</strong></div>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="cerita.html">Cerita Kami</a>
+    <a href="program.html">Program</a>
+    <a href="daftar.html">Daftar</a>
+    <a href="donasi.html">Donasi</a>
+  </nav>
+</header>
+
+<div class="donation-container">
+  <h2>Dukung Gerakan Kebaikan</h2>
+  <p>Setiap kontribusi Anda akan membantu kami menjangkau lebih banyak anak-anak dan komunitas yang membutuhkan serta mewujudkan mimpi kami.</p>
+
+  <div class="bank-info">
+    <h3>Informasi Rekening Donasi</h3>
+    
+    <div class="info-line">
+      <span>Bank:</span>
+      <span>BCA</span>
+    </div>
+
+    <div class="info-line">
+      <span>Nomor Rekening:</span>
+      <span id="rekening">7295678704</span>
+      <button class="copy-button" onclick="copyText('rekening')">Salin</button>
+    </div>
+
+    <div class="info-line">
+      <span>Nama Pemilik:</span>
+      <span>Cahya Tri Nugroho</span>
+    </div>
+  </div>
+
+  <div class="bank-info">
+    <h3>QR Code (opsional)</h3>
+    <img src="image/qris bca.jpg" alt="QR Code Donasi" width="200" style="display: block; margin: 0 auto;">
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2025 Social Camp | Kebaikan Bersama untuk Masa Depan Anak Bangsa.
+</footer>
+
+<script>
+  function copyText(id) {
+    const text = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+      alert("Nomor rekening disalin!");
+    });
+  }
+</script>
+
+</body>
+</html>

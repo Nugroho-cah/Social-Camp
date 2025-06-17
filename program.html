@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Program Kami - Social Camp</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3fdf4;
+      color: #333;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #007e33;
+    }
+
+    .hero {
+      background-color: #c3f5d5;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #2b542c;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 10px auto;
+    }
+
+    .program-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .program-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 320px;
+      overflow: hidden;
+      text-align: left;
+      transition: transform 0.2s;
+    }
+
+    .program-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .program-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .program-content {
+      padding: 20px;
+    }
+
+    .program-content h3 {
+      margin-top: 0;
+      color: #1c5f2e;
+    }
+
+    .program-content p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      background-color: #2b542c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #1e4023;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2b542c;
+      color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+      .program-section {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong style="color:rgb(255, 255, 255)">Social Camp</strong></div>
+  <nav>
+    <a href="index.html">Kembali</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Program Unggulan Kami</h1>
+  <p>Social Camp merancang program inspiratif untuk membentuk generasi yang peduli sosial dan lingkungan.</p>
+</section>
+
+<section class="program-section">
+
+  <!-- Program 1 -->
+  <div class="program-card">
+    <img src="image/gambar_2.jpg" alt="Eco Camp">
+    <div class="program-content">
+      <h3>Sahabat Sosial</h3>
+      <p>inisiatif relawan yang menghubungkan generasi muda dengan komunitas rentan untuk memberikan dukungan nyata. Melalui pelatihan keterampilan, pendampingan kesehatan, dan aktivitas sosial, program ini membangun kepedulian, memberdayakan penerima manfaat secara berkelanjutan.</p>
+      <a href="daftar.html" class="btn">Ikuti Sekarang</a>
+    </div>
+  </div>
+
+  <!-- Program 2 -->
+  <div class="program-card">
+    <img src="image/Gambar_5.jpg" alt="Keterampilan Sosial">
+    <div class="program-content">
+      <h3>Kstaria Samwise</h3>
+      <p>Ksatria Samwise adalah inisiatif sosial yang bertujuan untuk memberikan pelatihan melalui aksi nyata dan kepedulian terhadap sesama. Terinspirasi oleh karakter Samwise Gamgee dari "The Lord of the Rings," program ini menekankan nilai-nilai kesetiaan, pengorbanan, dan dukungan kepada mereka yang membutuhkan.</p>
+      <a href="daftar.html" class="btn">Bergabung Ksatria</a>
+    </div>
+  </div>
+
+  <!-- Program 3 -->
+  <div class="program-card">
+    <img src="image/Gambar_6.jpg" alt="Aksi Komunitas">
+    <div class="program-content">
+      <h3>Bumi Ceria Difabel</h3>
+      <p>Program Bumi Ceria Difabel fokus pada pelatihan keterampilan untuk memberdayakan penyandang disabilitas agar mandiri secara ekonomi. Pelatihan ini mencakup keterampilan kerja, soft skill, dan kesadaran tentang aksesibilitas. Oleh karena itu, program ini bertujuan untuk meningkatkan kepercayaan diri dan partisipasi aktif penyandang disabilitas dalam masyarakat.</p>
+      <a href="daftar.html" class="btn">Gabung Aksi</a>
+    </div>
+  </div>
+
+</section>
+
+<footer>
+  &copy; 2025 Social Camp | Transformasi Sosial Berbasis Edukasi dan Kolaborasi.
+</footer>
+
+</body>
+</html>

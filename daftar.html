@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - Social Camp</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f9f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #007e33;
+    }
+
+    .form-container {
+      max-width: 600px;
+      background: white;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #2b542c;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #2b542c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #1e4023;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #2b542c;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div><strong style="color:green">Social Camp</strong></div>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="cerita.html">Cerita Kami</a>
+    <a href="program.html">Program</a>
+    <a href="daftar.html">Daftar</a>
+    <a href="Index.html">Kembali</a>
+  </nav>
+</header>
+
+<div class="form-container">
+  <h2>Formulir Pendaftaran</h2>
+  <form action="#" method="post" onsubmit="return validateForm()">
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">Email Aktif:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="nohp">No. WhatsApp:</label>
+    <input type="tel" id="nohp" name="nohp" pattern="[0-9]+" required>
+
+    <label for="program">Pilih Program:</label>
+    <select id="program" name="program" required>
+      <option value="">-- Pilih Program --</option>
+      <option value="eco-camp">Sahabat Sosial</option>
+      <option value="softskill">Ksatria Samwise</option>
+      <option value="aksi">Bumi Ceria Difabel</option>
+    </select>
+
+    <label for="alasan">Mengapa ingin ikut program ini?</label>
+    <textarea id="alasan" name="alasan" rows="4" required></textarea>
+
+    <button type="submit">Daftar Sekarang</button>
+  </form>
+</div>
+
+<footer>
+  &copy; 2025 Social Camp | Bersama Membangun Masa Depan yang Lebih Baik.
+</footer>
+
+<script>
+  function validateForm() {
+    const nama = document.getElementById("nama").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const nohp = document.getElementById("nohp").value.trim();
+
+    if (!nama || !email || !nohp) {
+      alert("Harap isi semua bidang yang wajib.");
+      return false;
+    }
+
+    return true;
+  }
+</script>
+
+</body>
+</html>
